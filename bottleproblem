@@ -1,0 +1,23 @@
+
+def bottleproblem(a,b):
+    lena = len(a)
+    lenb = len(b)
+    mat = [[0]*(lena +1)] * (lenb +1)
+
+    for i in range lena:
+        for j in range lenb:
+            p = (i,j)
+            mat[p][(0,j)] = 1
+            mat[p][(i,0)] = 1
+
+
+
+
+
+def main():
+
+if __name__ == '__main__':
+    a=3
+    b=5
+    bottleproblem(a,b)
+    main()
